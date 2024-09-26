@@ -22,12 +22,12 @@ public class ListOFbooks {
 
             Statement stm = conn.createStatement();
 
-            rs = stm.executeQuery(Querry); // Execute the query  
+            rs = stm.executeQuery(Querry); 
 
-            // Process the result set  
+         
             while (rs.next()) {  
-                // Assuming columns in booklist are id (int) and title (String)  
-                int BSNO = rs.getInt("BSNO"); // Adjust according to your table structure  
+                 
+                int BSNO = rs.getInt("BSNO");  
                 String BNAME = rs.getString("BNAME");
                 String BCATEGORIES = rs.getString("BCATEGORIES");
 
